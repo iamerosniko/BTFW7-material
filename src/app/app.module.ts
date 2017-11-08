@@ -24,6 +24,7 @@ import { UserService } from './com_services/user.service';
 import { UserApi } from '../btfw/users/user-api';
 import { AuthGuard } from './com_services/auth-guard.service';
 import { AdmGuard } from './com_services/adm-guard.service';
+import { SampleComponent } from './sample/sample.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { AdmGuard } from './com_services/adm-guard.service';
     AdminComponent,
     AdminaccessComponent,
     MaterialTableComponent,
+    SampleComponent,
   ],
   imports: [
     BrowserModule,
