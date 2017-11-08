@@ -11,6 +11,9 @@ import { DepartmentComponent } from './maintenance/department/department.compone
 import { SkillsetmComponent } from './maintenance/skillsetm/skillsetm.component';
 import { AdminComponent } from './admin/admin.component';
 
+
+import { MaterialTableComponent } from './material-table/material-table.component';
+
 import { AuthGuard } from './com_services/auth-guard.service';
 import { AdmGuard } from './com_services/adm-guard.service';
 
@@ -27,6 +30,7 @@ export const appRoutes: Routes = [
                 { path: 'location-maint', component: LocationComponent},
                 { path: 'department-maint', component: DepartmentComponent},
                 { path: 'skill-maint', component: SkillsetmComponent},
+                { path: 'material-table', component : MaterialTableComponent}
                 
             ]
         },

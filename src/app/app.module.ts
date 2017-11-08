@@ -1,7 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { BtfwModule } from '../btfw/btfw.module';
 import { RouterModule } from '@angular/router';
+
+/* angular material */
+import { MatTableModule,MatPaginatorModule,MatInputModule, MatSortModule} from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { ShowresultComponent } from './search/showresult/showresult.component';
@@ -14,6 +18,7 @@ import { ExportpdfComponent } from './search/export/exportpdf/exportpdf.componen
 import { ExportexcelComponent } from './search/export/exportexcel/exportexcel.component';
 import { AdminComponent } from './admin/admin.component';
 import { AdminaccessComponent } from './adminaccess/adminaccess.component';
+import { MaterialTableComponent } from './material-table/material-table.component';
 
 import { UserService } from './com_services/user.service';
 import { UserApi } from '../btfw/users/user-api';
@@ -31,11 +36,17 @@ import { AdmGuard } from './com_services/adm-guard.service';
     ExportpdfComponent,
     ExportexcelComponent,
     AdminComponent,
-    AdminaccessComponent
+    AdminaccessComponent,
+    MaterialTableComponent,
   ],
   imports: [
     BrowserModule,
     BtfwModule,
+    MatInputModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
+    BrowserAnimationsModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [

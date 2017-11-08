@@ -72,6 +72,13 @@ export class AppComponent {
         submenu: null
       },
       {
+        text: 'material-module',
+        icon: 'fa-cogs',
+        submenu:null,
+        visible:true,
+        route: 'admin-access/material-table'
+      },
+      {
         text: 'Maintenance',
         icon: 'fa-wrench',
         route: null,
